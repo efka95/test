@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" href="lccmoose.png">
+ <title>LCC MOOSE</title>
+ <link rel="stylesheet" href="stylesheet.css">
+ <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+ </head>
+ 
+ <body>
+ <!--this is for navigation-->
+<div class="topnav">
+<a href="home.html" href="#home">HOME</a>
+<a href="about.html">ABOUT</a>
+<a href="standings.html">STANDINGS</a>
+<a href="contact.html">CONTACT</a>
+<!--this is for image on nav-->
+<img src="lccmoose.png" alt="logo" width="80px" height="70px" align="right">
+</div>
+
+<h1>CONTACT US</h1>
+<div class="contactus">
+<p>We are glad to hear from you and answer any question!</p>
+<a href="https://www.facebook.com/LCC.Moose/">
+<img id="fb" src="https://socialmediawidgets.files.wordpress.com/2014/03/02_facebook.png" width="58x" height="58px" style="padding:15px" align="center">
+</a>
+<a href="https://www.youtube.com/channel/UCB72sTbt0PIsKA5uMGe2m2g">
+<img id="yt" src="https://cdn3.iconfinder.com/data/icons/social-icons-5/607/YouTube_Play.png" width="58px" height="58px" style="padding:15px" align="center">
+</a>
+<a href="https://www.instagram.com/moosebasketball/">
+<img id="insta" src="https://socialmediawidgets.files.wordpress.com/2014/03/10_instagram.png" width="58px" height="58px" style="padding:15px" align="center">
+</a>
+
+<!--google map-->
+
+<div id="map" style="width:400px;height:400px;align:center"></div>
+<script>
+function myMap() {
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {
+    center: new google.maps.LatLng(55.731250, 21.132994), zoom: 10
+  };
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHlOltbObN6kPp7a25NvxpZ5GS-5Phshw &callback=myMap"></script>
+
+ 
+<!--this is for footer-->
+<div class="footer">
+<span>SPONSORS</span>
+<img src="danvite.png" width="90px" height="40px">
+<img src="saule.png" width="90px" height="40px">
+</div>
+
+</body>
+
+</html>
